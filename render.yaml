@@ -1,8 +1,7 @@
 services:
-- type: web
+- type: pserv  # Change to private service
   name: rabbitmq
   env: docker
-  port: 15672
   disk:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
