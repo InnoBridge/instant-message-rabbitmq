@@ -3,13 +3,13 @@ services:
   name: rabbitmq
   env: docker
   port: 15672
-  # envVars:
-  # - key: RABBITMQ_ERLANG_COOKIE
-  #   generateValue: true
-  # - key: RABBITMQ_DEFAULT_USER
-  #   value: rabbitmq
-  # - key: RABBITMQ_DEFAULT_PASS
-  #   generateValue: true
+  envVars:
+  - key: RABBITMQ_ERLANG_COOKIE
+    generateValue: true
+  - key: RABBITMQ_DEFAULT_USER
+    value: rabbitmq
+  - key: RABBITMQ_DEFAULT_PASS
+    generateValue: true
   disk:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
