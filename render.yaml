@@ -14,4 +14,4 @@ services:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
     sizeGB: 10
-  healthCheckPath: /api/health
+  healthCheckPath: / 
